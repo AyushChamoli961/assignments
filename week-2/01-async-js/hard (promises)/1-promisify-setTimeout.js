@@ -3,6 +3,16 @@
 */
 
 function wait(n) {
+  // Creating and returning a new Promise
+  return new Promise((resolve) => {
+    // Using setTimeout to simulate a delay of n seconds
+    setTimeout(() => {
+      // Resolving the Promise after the delay
+      resolve();
+    }, n * 1000); // Converting seconds to milliseconds
+  });
 }
+
+
 
 module.exports = wait;
